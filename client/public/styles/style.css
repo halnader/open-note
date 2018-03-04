@@ -10,7 +10,9 @@ body {
 .navbar-light .navbar-nav{
   font-size: 20px;
 }
-
+.nav-item1:hover {
+  background-color: inherit;
+}
 .container-fluid {
   text-align: left;
   color: white;

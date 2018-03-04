@@ -11,17 +11,17 @@ class LandingPage extends React.Component {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item1">
               <a class="nav-link" href="#">about <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item1">
               <a class="nav-link" href="#">faq</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item1">
               <a class="nav-link" href="/login">log in</a>
               {/*need to link the Log In page*/}
             </li>
-            <li class="nav-item">
+            <li class="nav-item1">
               <a class="nav-link" href="#">sign up</a>
             </li>
           </ul>
