@@ -26,6 +26,10 @@ body {
 height: 100%;
 back-ground position: center;
 }
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
 .btn {
   margin-top: 0px;
   align: center;
