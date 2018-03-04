@@ -71,7 +71,7 @@ var upload = multer({
 
 app.post('/api/noteupload', upload.single('notes'), (req,res) => {
   const notes = req.user.notes || req.file.location;
-  Documents.create(, {$set:{file: notes, name: req.body.name, author: req.user._id}}, function(err) {
+  Documents.create({file: notes, name: req.body.name, author: req.user._id}, function(err) {
     if(err) {
       res.redirect("/dashboard");
     } else {
