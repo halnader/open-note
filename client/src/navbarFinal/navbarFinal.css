@@ -39,7 +39,7 @@ body {
 
 /* -----------1.0 Navbar Formatting---------- */
 
-.li .a {
+.li a {
 	display: block;
 	color: #2677BE;
 	text-decoration: none;
@@ -50,7 +50,7 @@ body {
 	font-size: 12pt;
 }
 
-.li .a:hover {
+.li a:hover {
 color: #00477B;
 transition: all .2s ease-out;
 }
