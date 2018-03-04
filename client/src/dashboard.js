@@ -16,7 +16,7 @@ class Dashboard extends React.Component {
                   <div className="row">
                     <div className="col-12 col-sm-5 no-padding" style={{marginTop: "0"}}>
                       <div className="card">
-                        <h3>MAT101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
+                        <h3>ECON101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
                           <a href="#">
                             <p style={{color: "#484848"}}>Lecture 3 Notes</p>
@@ -57,7 +57,7 @@ class Dashboard extends React.Component {
                     </div>
                     <div className="col-12 col-sm-5" style={{marginTop: "0", marginLeft: "0.5em"}}>
                       <div className="card">
-                        <h3>ENG150<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
+                        <h3>APS150<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
                           <a href="#">
                             <p style={{color: "#484848"}}>Lecture 3 Notes</p>
@@ -139,7 +139,7 @@ class Dashboard extends React.Component {
                     </div>
                     <div className="col-12 col-sm-5" style={{marginTop: "1.5em", marginLeft: "0.5em"}}>
                       <div className="card">
-                        <h3>SCI150<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
+                        <h3>APS150<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
                           <a href="#">
                             <p style={{color: "#484848"}}>Lecture 3 Notes</p>
@@ -187,7 +187,7 @@ class Dashboard extends React.Component {
                   <div className="row">
                     <div className="col-12 col-sm-5 no-padding" style={{marginTop: "0"}}>
                       <div className="card">
-                        <h3>CS101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
+                        <h3>ECON101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
                           <a href="#">
                             <p style={{color: "#484848"}}>Lecture 3 Notes</p>

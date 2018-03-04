@@ -59,9 +59,7 @@ back-ground position: center;
   text-align: center;
   margin-top: 0.5em;
 }
-.nav-item1:hover {
-  background-color: inherit;
-}
+
 .loginBtn {
   box-sizing: border-box;
   position: relative;
