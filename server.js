@@ -18,15 +18,15 @@ Documents = mongoose.model('Documents');
 mongoose.Promise = global.Promise;
 
 AWS.config.update({
-accessKeyId: "AKIAI5FQC4CPTPFEDVGA",
-secretAccessKey: "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",
-"region": "us-west-2"
+accessKeyId: "AKIAIVGB7E6DICG2MVOA",
+secretAccessKey: "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",
+"region": "us-east"
 });
 
 var s3 = new AWS.S3();
 
-const profileBucket = 'profile-bucket-atheneum123';
-const myKey = 'profile-pic-bucket';
+const profileBucket = 'opennotes';
+const myKey = 'opennotes';
 s3.createBucket({ Bucket: profileBucket }, (err, data) => {
    if (err) {
      console.log(err);
@@ -58,7 +58,7 @@ app.use(passport.session());
 var upload = multer({
   storage: multerS3({
     s3: s3,
-    bucket: profileBucket,
+    bucket: opennotes,
     acl: 'public-read',
     metadata: function(req,file,cb) {
       cb(null, {fieldName: file.fieldname});
@@ -69,7 +69,7 @@ var upload = multer({
   })
 });
 
-app.post('/api/noteupload', upload.single('profilePicture'), (req,res) => {
+app.post('/api/noteupload', upload.single('notes'), (req,res) => {
   const notes = req.user.notes || req.file.location;
   Documents.create(, {$set:{file: notes, name: req.body.name, author: req.user._id}}, function(err) {
     if(err) {
