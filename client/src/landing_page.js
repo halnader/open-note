@@ -2,6 +2,7 @@ import React from 'react';
 class LandingPage extends React.Component {
   render () {
     return(
+    <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">OpenNotes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,11 +18,6 @@ class LandingPage extends React.Component {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">log in</a>
-<<<<<<< HEAD
-              need to link the Log In page
-=======
-              //need to link the Log In page
->>>>>>> 46f85a71d955f8b845017a688efd8e0102a9f771
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">sign up</a>
@@ -38,7 +34,7 @@ class LandingPage extends React.Component {
       <div class= "container">
       <button type="button" class="btn btn-outline-primary">Browse</button>
       </div>
-
+      </div>
 
     )
   }
