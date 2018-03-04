@@ -9,20 +9,16 @@ import Dashboard from './dashboard';
 class App extends Component {
   render() {
     return (
-      <div style={{padding: 0}} className="container-fluid">
-        <div className="row no-gutters">
-          <div className="col-3">
+      <BrowserRouter>
+        <div className="container-fluid">
+          <div className="row">
             <Nav />
-          </div>
-          <div className="col-9">
-            <BrowserRouter>
-              <Switch>
-                <Route path="/" component={Dashboard} />
-              </Switch>
-            </BrowserRouter>
+            <Switch>
+              <Route path="/" component={Dashboard} />
+            </Switch>
           </div>
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }

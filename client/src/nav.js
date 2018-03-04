@@ -3,7 +3,9 @@ import React from 'react';
 class Nav extends React.Component {
   render() {
     return(
-      <div>Nav</div>
+      <div className="col-3">
+        <div>Nav</div>
+      </div>
     )
   }
 }
