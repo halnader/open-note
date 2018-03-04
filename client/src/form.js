@@ -1,33 +1,40 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Field, reduxform} from 'redux-form';
+import {createPost} from './actions';
+
 const FileInput = ({
-  input: { value: omitValue. onChange, onBlur, ...inputProps},
+  input: { value: omitValue, onChange, onBlur, ...inputProps},
   meta: omiMeta,
-  ...inputProps
+  ...props
 }) => (
   <input
   onChange={adaptFileEventToValue(onChange)}
   onBlur={adaptFileEventToValue(onBlur)}
   type='file'
   className="custom-upload"
-  (...inputProps)
-  (...props)
+  {...inputProps}
+  {...props}
   />
 );
 
 class Form extends React.Component {
-
+  renderField(field) {
+    return(
+      <div>
+      <p>(field.label)</p>
+      <input
+      className="form-control"
+      type={field.type}
+      placeholder={field.placeholder}
+    />
+  </div>
+    )
+  };
 };
 
-renderField(field) {
-  return(
-    <div>
-    <p>(field.label)</p>
-    <input
-    className="form-control"
-    type={field.type}
-    placeholder={field.placeholder}
-    
-  )
-}
+export default reduxForm({
+   form: 'postForm'
+})(
+  connect(null, {createPost})(Form)
+);

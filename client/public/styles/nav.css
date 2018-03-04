@@ -1,0 +1,18 @@
+.navbar-bg {
+  height: 100vh;
+  background-color: #28292F;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.nav-brand {
+  color: #72B9FF;
+  margin-top: 0.5em;
+  border-left: 5px solid #2677BE;
+}
+
+.nav-text {
+  margin-left: 0.75em;
+}
