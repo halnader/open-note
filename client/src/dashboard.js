@@ -15,7 +15,9 @@ class Dashboard extends React.Component {
 
   render() {
     return(
-      <div>Dash</div>
+      <div className="col-9">
+        <div>Dash</div>
+      </div>
     )
   }
 }
