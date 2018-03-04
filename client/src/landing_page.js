@@ -1,9 +1,10 @@
 import React from 'react';
+
 class LandingPage extends React.Component {
   render () {
     return(
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">OpenNotes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,29 +27,26 @@ class LandingPage extends React.Component {
           </ul>
         </div>
       </nav>
-      <div class="container">
+
+<div>
+    <div class="container-fluid" style={{backgroundImage: "url(./backgroundphoto.jpg)" }}>
         <div class="row justify-content-md-center">
           <div class= "col-5">
             <h1> Access the best notes available online. </h1>
             <h1> By students, for students. </h1>
             <hr/>
             <p4> OpenNotes allows students to share notes conveniently and quickly with one another. </p4>
-          </div>
-        </div>
-      </div>
+            <div>
+              <a href="/dashboard" class="btn btn-outline-primary">Browse</a>
+            </div>
 
-    
-      <div class= "container">
-        <div class="row justify-content-md center">
-          <div class="col-12">
-            <button type="button" class="btn btn-outline-primary">Browse</button>
-          </div>
         </div>
       </div>
     </div>
-    )
-  }
-
+  </div>
+  </div>
+)
+}
 }
 
 export default LandingPage;
