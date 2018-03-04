@@ -5,9 +5,10 @@ class PdfView extends React.Component {
   render() {
     return(
       <div>
-        <ul>
-        	<li id="title">OpenNotes</li>
-        	<li id="search">
+      <div>
+        <ul className="ul">
+        	<li className="li" id="title">OpenNotes</li>
+        	<li className="li" id="search">
         		<form method="post">
         		  <input type="text" class="textbox" placeholder="Search"/>
         		  <button title="Search" value=":)" type="submit" class="button"></button>
@@ -16,14 +17,24 @@ class PdfView extends React.Component {
 
         	<div id="menu-items">
 
-        		<li><a href="#" className="signUp" style={{color: "white", fontWeight: "200"}}>Sign Up</a></li>
-        		<li ><a href="#" class="logIn" style={{color: "white", fontWeight: "200"}}>Log In</a></li>
-        		<li><a href="#" class="contact">Courses</a></li>
-        		<li><a href="#" class="about">About</a></li>
+        		<li className="li"><a href="#" className="signUp" style={{color: "white", fontWeight: "200"}}>Sign Up</a></li>
+        		<li className="li"><a href="#" class="logIn" style={{color: "white", fontWeight: "200"}}>Log In</a></li>
+        		<li className="li"><a href="#" class="contact">Courses</a></li>
+        		<li className="li"><a href="#" class="about">About</a></li>
 
         	</div>
         </ul>
       </div>
+      <div class ='container-fluid' style={{position: "relative"}}>
+        <div class ='pdf' style={{position:"absolute", top:"0", left:"0"}}>
+          <center>
+          <iframe src="./test.pdf" width='1130' height="470" style={{marginBsottom: "60px"}}> </iframe>
+          </center>
+        </div>
+        <center>
+      <div class='overlap_menu' style={{position: "absolute", top:"0", left:"0"}}>hii</div></center>
+    </div>
+  </div>
     )
   }
 }

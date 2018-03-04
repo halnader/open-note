@@ -20,7 +20,7 @@ class App extends Component {
           <Route path="/upload" component={Form} />
           <Route path="/notes" component={Notes} />
           <Route path="/login" component={Login}/>
-          <Route path="/pdf_viewer" component={PdfView}/>
+          <Route path="/pdfviewer" component={PdfView}/>
           <Route path="/" component={LandingPage} />
         </Switch>
       </BrowserRouter>

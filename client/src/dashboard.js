@@ -18,7 +18,7 @@ class Dashboard extends React.Component {
                       <div className="card">
                         <h3>ECON101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
-                          <a href="/pdf_viewer">
+                          <a href="/pdfviewer">
                             <p style={{color: "#484848"}}>Lecture 3 Notes</p>
                             <p style={{color: "#4a92c6", marginTop:"-1em"}}>5 days ago</p>
                           </a>
