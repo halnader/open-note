@@ -37,8 +37,17 @@
   padding-left: 2.15em;
 }
 
-.secondary-nav-text {
+.nav-a {
   color: #788296;
+}
+
+.nav-a:hover {
+  color: #788296;
+}
+
+ul li:hover {
+  background-color: #1C1C1F;
+  cursor: pointer;
 }
 
 ul {
@@ -47,11 +56,13 @@ ul {
 
 li {
   margin-top: 0.5em;
+  margin-right: 2.5em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
 }
 
 .nav-num {
   float:right;
-  margin-right: 2.5em;
 }
 
 .hover-white:hover {
