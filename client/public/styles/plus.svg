@@ -1,0 +1,27 @@
+<svg width="374" height="357" viewBox="0 0 374 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Component</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-396 368)">
+<g id="Component">
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(396 -368)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(396 -368)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 577 -265)" fill="#FFFFFF"/>
+</g>
+<g id="Line 2">
+<use xlink:href="#path2_stroke" transform="translate(508 -190)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 374 178.5C 374 277.083 290.277 357 187 357C 83.7228 357 0 277.083 0 178.5C 0 79.9172 83.7228 0 187 0C 290.277 0 374 79.9172 374 178.5Z"/>
+<path id="path1_stroke_2x" d="M 349 178.5C 349 262.192 277.579 332 187 332L 187 382C 302.976 382 399 291.973 399 178.5L 349 178.5ZM 187 332C 96.4211 332 25 262.192 25 178.5L -25 178.5C -25 291.973 71.0244 382 187 382L 187 332ZM 25 178.5C 25 94.8075 96.4211 25 187 25L 187 -25C 71.0244 -25 -25 65.0268 -25 178.5L 25 178.5ZM 187 25C 277.579 25 349 94.8075 349 178.5L 399 178.5C 399 65.0268 302.976 -25 187 -25L 187 25Z"/>
+<path id="path2_stroke" d="M 0 0L 150 0L 150 -10L 0 -10L 0 0Z"/>
+</defs>
+</svg>

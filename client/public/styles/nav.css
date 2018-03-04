@@ -9,7 +9,7 @@
 
 .nav-brand {
   color: #72B9FF;
-  margin-top: 0.5em;
+  margin-top: 0.75em;
   border-left: 5px solid #2677BE;
 }
 
@@ -20,4 +20,35 @@
 .nav-brand-user{
   color: #ffffff;
   margin-left: 1.5em;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.upload-btn {
+  background-color: #00477B;
+  margin-top: 2.25em;
+  padding: 1em 2.15em;
+}
+
+.nav-padding {
+  padding-left: 2.15em;
+}
+
+.secondary-nav-text {
+  color: #788296;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-top: 0.5em;
+}
+
+.nav-num {
+  float:right;
+  margin-right: 2.5em;
 }
