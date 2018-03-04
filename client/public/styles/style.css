@@ -3,7 +3,6 @@ body {
 }
 
 
-
 .navbar-light .navbar-brand {
   font-size: 35px;
   font-weight: bold;
@@ -19,16 +18,24 @@ body {
   color: white;
   width: 100%;
 }
-
+.col-5 {
+  margin-top: 75px;
+}
+h1 {
+  color: white;
+}
 #background-photo {
 height: 100%;
 back-ground position: center;
 }
 .btn {
   margin-top: 20px;
-  margin-left: 180px;
+  align: center;
 }
-
+.button {
+  margin: 5px auto;
+  width: 50%;
+}
 .no-padding {
   padding: 0 !important;
 }

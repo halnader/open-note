@@ -36,7 +36,7 @@ class LandingPage extends React.Component {
             <h1> By students, for students. </h1>
             <hr/>
             <p4> OpenNotes allows students to share notes conveniently and quickly with one another. </p4>
-            <div>
+            <div class="button">
               <a href="/dashboard" class="btn btn-outline-primary">Browse</a>
             </div>
 
