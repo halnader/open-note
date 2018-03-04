@@ -2,7 +2,8 @@
   font-size: 30px;
   display: inline-block;
   font-family: 'Roboto', sans-serif;
-  color: #2677BE
+  color: #2677BE;
+  margin-top: 100px;
 }
 .h2 {
   font-size: 18px;
@@ -58,6 +59,7 @@
   height: 12px;
   background-color: #2677BE;
 }
+
 
 span3 {
   display: inline-block;
