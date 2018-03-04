@@ -29,17 +29,16 @@ class LandingPage extends React.Component {
       </nav>
 
 <div>
-    <div style={{backgroundImage: "url(./backgroundphoto.jpg)", height: "100vh" }}>
+    <div style={{backgroundImage: "url(./backgroundphoto.jpg)", height: "100vh"}}>
         <div class="row justify-content-md-center">
           <div class= "col-5">
             <h1> Access the best notes available online. </h1>
             <h1> By students, for students. </h1>
             <hr/>
             <p4> OpenNotes allows students to share notes conveniently and quickly with one another. </p4>
-            <div>
-              <a href="/dashboard" class="btn btn-outline-primary">Browse</a>
-            </div>
-
+            <div class="button">
+              <a href="/dashboard" class="btn btn-primary btn-lg">Browse</a>
+          </div>
         </div>
       </div>
     </div>
