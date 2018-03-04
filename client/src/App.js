@@ -7,6 +7,7 @@ import Nav from './nav';
 import Dashboard from './dashboard';
 import LandingPage from './landing_page';
 import Form from './form';
+import Notes from './notes_list';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Switch>
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/formtest" component={Form} />
+          <Route path="/notes" component={Notes} />
           <Route path="/" component={LandingPage} />
         </Switch>
       </BrowserRouter>
