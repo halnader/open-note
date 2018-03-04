@@ -18,7 +18,7 @@ class Nav extends React.Component {
               user.displayName
               ?
               <h5 className="nav-brand-user">
-                user.displayName
+                {user.displayName}
               </h5>
               :
               <h5 className="nav-brand-user">
