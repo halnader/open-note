@@ -17,7 +17,11 @@ class LandingPage extends React.Component {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">log in</a>
+<<<<<<< HEAD
+              need to link the Log In page
+=======
               //need to link the Log In page
+>>>>>>> 46f85a71d955f8b845017a688efd8e0102a9f771
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">sign up</a>

@@ -1,7 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Field, reduxform} from 'redux-form';
+import {Field, reduxForm} from 'redux-form';
 import {createPost} from './actions';
+
+const adaptFileEventToValue = delegate => e => delegate(e.target.files[0]);
 
 const FileInput = ({
   input: { value: omitValue, onChange, onBlur, ...inputProps},
