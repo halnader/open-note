@@ -10,6 +10,8 @@ const multerS3 = require('multer-s3');
 const AWS = require('aws-sdk');
 
 require('./models/user_model');
+require('./models/document_model');
+require('./models/class_model');
 require('./services/passport');
 
 User = mongoose.model('User');

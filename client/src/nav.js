@@ -27,6 +27,11 @@ class Nav extends React.Component {
             }
           </div>
         </div>
+        <div>
+          <a className="upload-btn">
+            Upload
+          </a>
+        </div>
       </div>
     )
   }
