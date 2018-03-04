@@ -16,30 +16,30 @@ User = mongoose.model('User');
 
 mongoose.Promise = global.Promise;
 
-// AWS.config.update({
-//   accessKeyId: "AKIAI5FQC4CPTPFEDVGA",
-//   secretAccessKey: "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",
-//   "region": "us-west-2"
-// });
+AWS.config.update({
+accessKeyId: "AKIAI5FQC4CPTPFEDVGA",
+secretAccessKey: "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",
+"region": "us-west-2"
+});
 
-//var s3 = new AWS.S3();
+var s3 = new AWS.S3();
 
-//const profileBucket = 'profile-bucket-atheneum123';
-//const myKey = 'profile-pic-bucket';
-// s3.createBucket({ Bucket: profileBucket }, (err, data) => {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     params = { Bucket: profileBucket, Key: myKey, Body: 'Test' };
-//     s3.putObject(params, (err, data) => {
-//       if (err) {
-//         console.log(err);
-//       } else {
-//         console.log('Successfully loaded data');
-//       }
-//     });
-//   }
-// });
+const profileBucket = 'profile-bucket-atheneum123';
+const myKey = 'profile-pic-bucket';
+s3.createBucket({ Bucket: profileBucket }, (err, data) => {
+   if (err) {
+     console.log(err);
+   } else {
+     params = { Bucket: profileBucket, Key: myKey, Body: 'Test' };
+     s3.putObject(params, (err, data) => {
+       if (err) {
+         console.log(err);
+       } else {
+         console.log('Successfully loaded data');
+       }
+     });
+   }
+ });
 
 mongoose.connect(config.mongoURI);
 
