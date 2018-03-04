@@ -11,7 +11,7 @@ class PdfView extends React.Component {
         	<li className="li" id="search">
         		<form method="post">
         		  <input type="text" class="textbox" placeholder="Search"/>
-        		  <button title="Search" value=":)" type="submit" class="button"></button>
+        		  <input title="Search" value=":)" type="submit" class="button" style={{marginTop:"-0.05em"}}></input>
         		</form>
             </li>
 
@@ -28,7 +28,7 @@ class PdfView extends React.Component {
       <div class ='container-fluid' style={{position: "relative"}}>
         <div class ='pdf' style={{position:"absolute", top:"0", left:"0"}}>
           <center>
-          <iframe src="./test.pdf" width='1130' height="470" style={{marginBsottom: "60px"}}> </iframe>
+            <iframe src={"./logo.svg"} style={{marginBsottom: "60px", width:'1130', height: "470"}}></iframe>
           </center>
         </div>
         <center>

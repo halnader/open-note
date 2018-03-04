@@ -93,7 +93,9 @@ app.get('/api/runpython', function(req,res) {
   pyshell.end(function (err) {
       if (err){
           throw err;
-      };
+      } else {
+        res.redirect("/dashboard");
+      }
   });
 })
 
