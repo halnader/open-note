@@ -22,6 +22,7 @@ body {
 }
 #background-photo {
 height: 100%;
+width: 100%;
 back-ground position: center;
 }
 .row {
