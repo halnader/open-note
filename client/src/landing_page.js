@@ -4,7 +4,7 @@ class LandingPage extends React.Component {
   render () {
     return(
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">OpenNotes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -18,7 +18,7 @@ class LandingPage extends React.Component {
               <a class="nav-link" href="#">faq</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">log in</a>
+              <a class="nav-link" href="/login">log in</a>
               {/*need to link the Log In page*/}
             </li>
             <li class="nav-item">
