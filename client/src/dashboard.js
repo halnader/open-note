@@ -12,7 +12,7 @@ class Dashboard extends React.Component {
 
   render() {
     return(
-      <div className="container-fluid" style={{paddingTop: "0", height: "100vh"}}>
+      <div className="container-fluid" style={{padding: "0", height: "100vh"}}>
         <div className="row no-gutter" style={{height: "100vh"}}>
           <Nav/>
           <div className="col-9" >
@@ -28,7 +28,7 @@ class Dashboard extends React.Component {
                         <p>Lecture 3 Notes</p>
                         <p style={{color: "#4a92c6", marginTop:"-1em"}}>5 days ago</p>
                         <span>
-                          
+
                         </span>
                       </div>
                     </div>
