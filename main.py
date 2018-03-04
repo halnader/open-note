@@ -1,3 +1,4 @@
+from __future__ import print_function
 import pip
 
 def install(package):
@@ -15,7 +16,7 @@ if __name__ == '__main__':
     install('apiclient.http')
     install('argparse')
 
-from __future__ import print_function
+
 import httplib2
 import os, io, shutil
 
