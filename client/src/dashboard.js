@@ -14,7 +14,7 @@ class Dashboard extends React.Component {
                   <h1>Updates</h1>
                   <h3 style={{marginTop: "1.25em"}}>New Notes</h3>
                   <div className="row">
-                    <div className="col-5 no-padding" style={{marginTop: "0"}}>
+                    <div className="col-12 col-sm-5 no-padding" style={{marginTop: "0"}}>
                       <div className="card">
                         <h3>ECON101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
@@ -55,7 +55,7 @@ class Dashboard extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div className="col-5" style={{marginTop: "0", marginLeft: "0.5em"}}>
+                    <div className="col-12 col-sm-5" style={{marginTop: "0", marginLeft: "0.5em"}}>
                       <div className="card">
                         <h3>APS150<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
@@ -96,7 +96,7 @@ class Dashboard extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div className="col-5 no-padding" style={{marginTop: "1.5em"}}>
+                    <div className="col-12 col-sm-5 no-padding" style={{marginTop: "1.5em"}}>
                       <div className="card">
                         <h3>ECON101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
@@ -137,7 +137,7 @@ class Dashboard extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div className="col-5" style={{marginTop: "1.5em", marginLeft: "0.5em"}}>
+                    <div className="col-12 col-sm-5" style={{marginTop: "1.5em", marginLeft: "0.5em"}}>
                       <div className="card">
                         <h3>APS150<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
@@ -185,7 +185,7 @@ class Dashboard extends React.Component {
                 <div className="col-10 offset-sm-1" style={{color: "#484848"}}>
                   <h3 style={{marginTop: "1.25em"}}>Recommendations</h3>
                   <div className="row">
-                    <div className="col-5 no-padding" style={{marginTop: "0"}}>
+                    <div className="col-12 col-sm-5 no-padding" style={{marginTop: "0"}}>
                       <div className="card">
                         <h3>ECON101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
@@ -226,7 +226,7 @@ class Dashboard extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div className="col-5" style={{marginTop: "0", marginLeft: "0.5em"}}>
+                    <div className="col-12 col-sm-5" style={{marginTop: "0", marginLeft: "0.5em"}}>
                       <div className="card">
                         <h3>APS150<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
                         <div style={{marginBottom: "-0.5em", marginTop: "0.5em"}}>
