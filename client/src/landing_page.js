@@ -27,14 +27,20 @@ class LandingPage extends React.Component {
         </div>
       </nav>
       <div class="container">
-        <div class="row">
-          <div class= "col-6 col-sm-offset-3">
+        <div class="row justify-content-md-center">
+          <div class= "col-5">
             <h1> Access the best notes available online. </h1>
             <h1> By students, for students. </h1>
             <hr/>
             <p4> OpenNotes allows students to share notes conveniently and quickly with one another. </p4>
           </div>
-          <div class= "container">
+        </div>
+      </div>
+
+    
+      <div class= "container">
+        <div class="row justify-content-md center">
+          <div class="col-12">
             <button type="button" class="btn btn-outline-primary">Browse</button>
           </div>
         </div>
