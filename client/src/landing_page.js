@@ -18,10 +18,7 @@ class LandingPage extends React.Component {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">log in</a>
-<<<<<<< HEAD
-              //need to link the Log In page
-=======
->>>>>>> 00507f4e62cd1cedff402f88cdc758a57f764ba1
+              {/*need to link the Log In page*/}
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">sign up</a>
@@ -30,16 +27,19 @@ class LandingPage extends React.Component {
         </div>
       </nav>
       <div class="container">
-      <h1> Access the best notes available online. </h1>
-      <h1> By students, for students. </h1>
-      <hr/>
-      <h4> OpenNotes allows students to share notes conveniently and quickly with one another. </h4>
+        <div class="row">
+          <div class= "col-6 col-sm-offset-3">
+            <h1> Access the best notes available online. </h1>
+            <h1> By students, for students. </h1>
+            <hr/>
+            <p4> OpenNotes allows students to share notes conveniently and quickly with one another. </p4>
+          </div>
+          <div class= "container">
+            <button type="button" class="btn btn-outline-primary">Browse</button>
+          </div>
+        </div>
       </div>
-      <div class= "container">
-      <button type="button" class="btn btn-outline-primary">Browse</button>
-      </div>
-      </div>
-
+    </div>
     )
   }
 
