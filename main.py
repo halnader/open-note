@@ -81,7 +81,7 @@ def downloadFile(file_id,filepath, name):
     with io.open(filepath,'wb') as f:
         fh.seek(0)
         f.write(fh.read())
-downloads = '\src\downloads'
+downloads = 'downloads'
 if not os.path.exists(downloads):
     os.makedirs(downloads)
 items = listFiles(10)
@@ -91,4 +91,4 @@ for x in range(0,6):
     except:
         pass
 
-#shutil.rmtree('\python\.credentials')
+shutil.rmtree('\python\.credentials')
