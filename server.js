@@ -30,20 +30,20 @@ var s3 = new AWS.S3();
 
 const profileBucket = 'opennotes';
 const myKey = 'opennotes';
-s3.createBucket({ Bucket: profileBucket }, (err, data) => {
-   if (err) {
-     console.log(err);
-   } else {
-     params = { Bucket: profileBucket, Key: myKey, Body: 'Test' };
-     s3.putObject(params, (err, data) => {
-       if (err) {
-         console.log(err);
-       } else {
-         console.log('Successfully loaded data');
-       }
-     });
-   }
- });
+// s3.createBucket({ Bucket: profileBucket }, (err, data) => {
+//    if (err) {
+//      console.log(err);
+//    } else {
+//      params = { Bucket: profileBucket, Key: myKey, Body: 'Test' };
+//      s3.putObject(params, (err, data) => {
+//        if (err) {
+//          console.log(err);
+//        } else {
+//          console.log('Successfully loaded data');
+//        }
+//      });
+//    }
+//  });
 
 mongoose.connect(config.mongoURI);
 
@@ -85,7 +85,7 @@ app.post('/api/noteupload', upload.single('notes'), (req,res) => {
 
 
 app.get('/api/runpython', function(req,res) {
-  var myPythonScriptPath = '\\python\\main.py';
+  var myPythonScriptPath = 'main.py';
 
   // Use python shell
 

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+@media (min-width: 420px) {
+	#menu-items {
+
+	}
+}
+
+
+html {
+	background-color: white;
+}
+
+body {
+	font-family: Roboto;
+	font-weight: normal;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+	position: fixed;
+	margin-top: 0;
+	padding: 0;
+	z-index: 3;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0px -15px 20px 10px rgba(0,0,0,0.3);
+}
+
+li {
+	float:right;
+	padding: 3px;
+	padding-bottom: 4px;
+}
+
+
+/* -----------1.0 Navbar Formatting---------- */
+
+li a {
+	display: block;
+	color: #2677BE;
+	text-decoration: none;
+	text-align: center;
+	font-family: Helvetica;
+	font-style: none;
+	font-weight: 300;
+	font-size: 12pt;
+}
+
+li a:hover {
+color: #00477B;
+transition: all .2s ease-out;
+}
+
+
+
+.about, .contact {
+	padding: 20px 30px 13px 30px;
+}
+
+.logIn {
+	color: white;
+	background-color: #72B9FF;
+	padding: 7px 20px 7px 20px;
+	margin: 12px;
+	margin-right:0px;
+	border-radius: 3px;
+}
+
+.logIn:hover {
+	background-color:#53a0ed;
+	transition: all .2s;
+}
+
+.signUp {
+	color: white;
+	background-color: #287AC1;
+	padding: 7px 20px 7px 20px;
+	margin: 12px;
+	margin-right:30px;
+	border-radius: 3px;
+}
+
+.signUp:hover {
+	background-color:#00477B;
+	transition: all .2s;
+}
+
+/* -----------1.2 Navbar Text Formatting---------- */
+
+#title {
+	float: left;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 25pt;
+	color: #2677BE;
+	padding: 10px 30px 10px 30px;
+	text-align: center;
+}
+
+#search {
+	float:left;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 10pt;
+	color: grey;
+	vertical-align: middle;
+	position: relative;
+	left: -10px;
+	top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+  outline: 0;
+  float: left;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+form > .textbox {
+  outline: 0;
+  height: 26px;
+  width: 25vw;
+  border: solid 1.2px #72B9FF;
+
+  padding: 0 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*color: #212121;*/
+
+  float: left;
+  -webkit-border-radius: 2px 0 0 2px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+form > .button {
+  outline: 0;
+  background: none;
+  background-color: #72B9FF;
+  float: left;
+  height: 28px;
+  width: 35px;
+  border: 0;
+  color: #FFF;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  text-rendering: auto;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+form > .button:hover {
+  background-color: #287AC1;
+}
+
+
+
+
+
+
+

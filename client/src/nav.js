@@ -10,7 +10,7 @@ class Nav extends React.Component {
   render() {
     const {user} = this.props;
     return(
-      <div className="col-3 navbar-bg no-gutter no-padding">
+      <div className="col-3 navbar-bg no-gutter no-padding" style={{position: "relative"}}>
         <div className="nav-brand">
           <h3 className="nav-text">OpenNotes</h3>
           <div className="nav-user">
@@ -57,7 +57,7 @@ class Nav extends React.Component {
           <p className="white-text nav-padding" style={{marginTop: "2em"}}>Following</p>
           <ul className="secondary-nav-text">
             <a className="nav-a" href="#"><li>Songeun</li></a>
-            <a className="nav-a" href="#"><li>Siran</li></a>
+            <a className="nav-a" href="#"><li>Si Ran</li></a>
             <a className="nav-a" href="#"><li>Zain</li></a>
             <a className="nav-a" href="#"><li>Vaibhav</li></a>
             <a className="nav-a" href="#"><li>Hashem</li></a>
