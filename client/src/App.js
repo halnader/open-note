@@ -9,6 +9,7 @@ import LandingPage from './landing_page';
 import Form from './form';
 import Notes from './notes_list';
 import Login from './login';
+import PdfView from './pdf_view';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/upload" component={Form} />
           <Route path="/notes" component={Notes} />
           <Route path="/login" component={Login}/>
+          <Route path="/pdf_viewer" component={PdfView}/>
           <Route path="/" component={LandingPage} />
         </Switch>
       </BrowserRouter>
