@@ -16,7 +16,7 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route path="/dashboard" component={Dashboard} />
-          <Route path="/formtest" component={Form} />
+          <Route path="/upload" component={Form} />
           <Route path="/notes" component={Notes} />
           <Route path="/login" component={Login}/>
           <Route path="/" component={LandingPage} />
