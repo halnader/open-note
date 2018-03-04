@@ -9,7 +9,7 @@ class Dashboard extends React.Component {
       </div>
     </div>
   }
-  
+
   render() {
     return(
       <div className="container-fluid">
@@ -23,9 +23,9 @@ class Dashboard extends React.Component {
                   <h3 style={{marginTop: "1.25em"}}>New Notes</h3>
                   <div className="col-6">
                     <div className="card">
-                      <h1>Yo</h1>
+                      <h3 style={{margin:"0.75em"}}>ECON101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
+                      
                     </div>
-                    {this.props.renderCard}
                   </div>
                 </div>
               </div>
