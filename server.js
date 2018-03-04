@@ -25,8 +25,8 @@ secretAccessKey: "rekAV6ocJX9yLcYG4GtrJu62L8AL1A1U0erLJJV5",
 
 var s3 = new AWS.S3();
 
-const profileBucket = 'open-note';
-const myKey = 'open-note';
+const profileBucket = 'opennotes';
+const myKey = 'opennotes';
 s3.createBucket({ Bucket: profileBucket }, (err, data) => {
    if (err) {
      console.log(err);
@@ -58,7 +58,7 @@ app.use(passport.session());
 var upload = multer({
   storage: multerS3({
     s3: s3,
-    bucket: open-note,
+    bucket: opennotes,
     acl: 'public-read',
     metadata: function(req,file,cb) {
       cb(null, {fieldName: file.fieldname});
