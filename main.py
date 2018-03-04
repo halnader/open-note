@@ -63,7 +63,7 @@ def downloadFile(file_id,filepath, name):
     with io.open(filepath,'wb') as f:
         fh.seek(0)
         f.write(fh.read())
-downloads = 'D:\\hashem\\My_Projects\\StarterHacks\\python\\downloads'
+downloads = '\src\downloads'
 if not os.path.exists(downloads):
     os.makedirs(downloads)
 items = listFiles(10)
@@ -73,4 +73,4 @@ for x in range(0,6):
     except:
         pass
 
-shutil.rmtree('D:\\hashem\\My_Projects\\StarterHacks\\python\\.credentials')
+#shutil.rmtree('\python\.credentials')
