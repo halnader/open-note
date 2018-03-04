@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from './nav';
 
 class Dashboard extends React.Component {
   componentDidMount() {
@@ -15,9 +16,15 @@ class Dashboard extends React.Component {
 
   render() {
     return(
-      <div className="col-9">
-        <div>Dash</div>
+      <div className="container-fluid">
+        <div className="row no-gutter">
+          <Nav/>
+          <div className="col-9">
+            <div>Dash</div>
+          </div>
+        </div>
       </div>
+
     )
   }
 }

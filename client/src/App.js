@@ -12,16 +12,11 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="container-fluid">
-          <div className="row">
-            <Nav />
-            <Switch>
-              <Route path="/" component={LandingPage} />
-              <Route path="/dashboard" component={Dashboard} />
-              <Route path="/formtest" component={Form} />
-            </Switch>
-          </div>
-        </div>
+        <Switch>
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/formtest" component={Form} />
+          <Route path="/" component={LandingPage} />
+        </Switch>
       </BrowserRouter>
     );
   }

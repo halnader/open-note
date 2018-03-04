@@ -13,6 +13,7 @@ require('./models/user_model');
 require('./services/passport');
 
 User = mongoose.model('User');
+Documents = mongoose.model('Documents');
 
 mongoose.Promise = global.Promise;
 
@@ -54,19 +55,30 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// var upload = multer({
-//   storage: multerS3({
-//     s3: s3,
-//     bucket: profileBucket,
-//     acl: 'public-read',
-//     metadata: function(req,file,cb) {
-//       cb(null, {fieldName: file.fieldname});
-//     },
-//     key: function(req,file,cb) {
-//       cb(null, Date.now().toString());
-//     }
-//   })
-// });
+var upload = multer({
+  storage: multerS3({
+    s3: s3,
+    bucket: profileBucket,
+    acl: 'public-read',
+    metadata: function(req,file,cb) {
+      cb(null, {fieldName: file.fieldname});
+    },
+    key: function(req,file,cb) {
+      cb(null, Date.now().toString());
+    }
+  })
+});
+
+app.post('/api/noteupload', upload.single('profilePicture'), (req,res) => {
+  const notes = req.user.notes || req.file.location;
+  Documents.create(, {$set:{file: notes, name: req.body.name, author: req.user._id}}, function(err) {
+    if(err) {
+      res.redirect("/dashboard");
+    } else {
+      res.redirect("/dashboard");
+    }
+  })
+});
 
 require('./routes/authRoutes')(app);
 
