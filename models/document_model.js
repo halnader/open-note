@@ -9,3 +9,5 @@ const DocumentSchema = new mongoose.Schema({
   name: String,
   file: String
 });
+
+mongoose.model("Documents", DocumentSchema);
