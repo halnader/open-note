@@ -20,8 +20,6 @@ body {
 }
 .col-5 {
   margin-top: 75px;
-}
-h1 {
   color: white;
 }
 #background-photo {
@@ -29,12 +27,12 @@ height: 100%;
 back-ground position: center;
 }
 .btn {
-  margin-top: 20px;
+  margin-top: 0px;
   align: center;
 }
 .button {
-  margin: 5px auto;
-  width: 50%;
+  margin: 20px auto;
+  width: 20%;
 }
 .no-padding {
   padding: 0 !important;
