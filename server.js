@@ -10,6 +10,8 @@ const multerS3 = require('multer-s3');
 const AWS = require('aws-sdk');
 
 require('./models/user_model');
+require('./models/document_model');
+require('./models/class_model');
 require('./services/passport');
 
 User = mongoose.model('User');
@@ -20,7 +22,7 @@ mongoose.Promise = global.Promise;
 AWS.config.update({
 accessKeyId: "AKIAIVGB7E6DICG2MVOA",
 secretAccessKey: "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",
-"region": "us-east"
+"region": "us-east-2"
 });
 
 var s3 = new AWS.S3();
@@ -58,7 +60,7 @@ app.use(passport.session());
 var upload = multer({
   storage: multerS3({
     s3: s3,
-    bucket: opennotes,
+    bucket: 'opennotes',
     acl: 'public-read',
     metadata: function(req,file,cb) {
       cb(null, {fieldName: file.fieldname});
@@ -71,7 +73,7 @@ var upload = multer({
 
 app.post('/api/noteupload', upload.single('notes'), (req,res) => {
   const notes = req.user.notes || req.file.location;
-  Documents.create(, {$set:{file: notes, name: req.body.name, author: req.user._id}}, function(err) {
+  Documents.create({file: notes, name: req.body.name, author: req.user._id}, function(err) {
     if(err) {
       res.redirect("/dashboard");
     } else {

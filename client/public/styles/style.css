@@ -28,3 +28,11 @@ back-ground position: center;
   margin-top: 20px;
   margin-left: 180px;
 }
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.text-align-center {
+  text-align: center;
+}
