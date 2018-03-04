@@ -8,6 +8,7 @@ const config = require('./config/keys.js');
 const multer = require('multer');
 const multerS3 = require('multer-s3');
 const AWS = require('aws-sdk');
+var PythonShell = require('python-shell');
 
 require('./models/user_model');
 require('./models/document_model');
@@ -29,20 +30,20 @@ var s3 = new AWS.S3();
 
 const profileBucket = 'opennotes';
 const myKey = 'opennotes';
-s3.createBucket({ Bucket: profileBucket }, (err, data) => {
-   if (err) {
-     console.log(err);
-   } else {
-     params = { Bucket: profileBucket, Key: myKey, Body: 'Test' };
-     s3.putObject(params, (err, data) => {
-       if (err) {
-         console.log(err);
-       } else {
-         console.log('Successfully loaded data');
-       }
-     });
-   }
- });
+// s3.createBucket({ Bucket: profileBucket }, (err, data) => {
+//    if (err) {
+//      console.log(err);
+//    } else {
+//      params = { Bucket: profileBucket, Key: myKey, Body: 'Test' };
+//      s3.putObject(params, (err, data) => {
+//        if (err) {
+//          console.log(err);
+//        } else {
+//          console.log('Successfully loaded data');
+//        }
+//      });
+//    }
+//  });
 
 mongoose.connect(config.mongoURI);
 
@@ -81,6 +82,21 @@ app.post('/api/noteupload', upload.single('notes'), (req,res) => {
     }
   })
 });
+
+
+app.get('/api/runpython', function(req,res) {
+  var myPythonScriptPath = 'main.py';
+
+  // Use python shell
+
+  var pyshell = new PythonShell(myPythonScriptPath);
+  pyshell.end(function (err) {
+      if (err){
+          throw err;
+      };
+  });
+})
+
 
 require('./routes/authRoutes')(app);
 
