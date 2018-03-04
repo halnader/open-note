@@ -29,7 +29,7 @@ class LandingPage extends React.Component {
       </nav>
 
 <div>
-    <div class="container-fluid" style={{backgroundImage: "url(./backgroundphoto.jpg)" }}>
+    <div style={{backgroundImage: "url(./backgroundphoto.jpg)", height: "100vh" }}>
         <div class="row justify-content-md-center">
           <div class= "col-5">
             <h1> Access the best notes available online. </h1>

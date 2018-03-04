@@ -12,8 +12,8 @@ class Dashboard extends React.Component {
 
   render() {
     return(
-      <div className="container-fluid">
-        <div className="row no-gutter">
+      <div className="container-fluid" style={{paddingTop: "0", height: "100vh"}}>
+        <div className="row no-gutter" style={{height: "100vh"}}>
           <Nav/>
           <div className="col-9">
             <div className="container-fluid" style={{marginTop: "2.25em"}}>
@@ -24,7 +24,7 @@ class Dashboard extends React.Component {
                   <div className="col-6">
                     <div className="card">
                       <h3 style={{margin:"0.75em"}}>ECON101<span style={{float: "right", fontSize: "75%", marginTop: "0.25em"}}>2</span></h3>
-                      
+
                     </div>
                   </div>
                 </div>
