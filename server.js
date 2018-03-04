@@ -82,7 +82,7 @@ app.post('/api/noteupload', upload.single('notes'), (req,res) => {
   })
 });
 
-var myPythonScriptPath = 'D:\\hashem\\My_Projects\\StarterHacks\\python\\main.py';
+var myPythonScriptPath = '\\python\\main.py';
 
 // Use python shell
 var PythonShell = require('python-shell');
