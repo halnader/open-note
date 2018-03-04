@@ -22,7 +22,7 @@ mongoose.Promise = global.Promise;
 AWS.config.update({
 accessKeyId: "AKIAIVGB7E6DICG2MVOA",
 secretAccessKey: "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",
-"region": "us-east"
+"region": "us-east-2"
 });
 
 var s3 = new AWS.S3();
@@ -60,7 +60,7 @@ app.use(passport.session());
 var upload = multer({
   storage: multerS3({
     s3: s3,
-    bucket: opennotes,
+    bucket: 'opennotes',
     acl: 'public-read',
     metadata: function(req,file,cb) {
       cb(null, {fieldName: file.fieldname});
