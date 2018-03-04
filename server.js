@@ -8,7 +8,6 @@ const config = require('./config/keys.js');
 const multer = require('multer');
 const multerS3 = require('multer-s3');
 const AWS = require('aws-sdk');
-const unoconv = require('unoconv')
 const nodeMsOfficePdf = require('node-msoffice-pdf')
 
 require('./models/user_model');
