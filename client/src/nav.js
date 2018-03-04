@@ -61,7 +61,6 @@ class Nav extends React.Component {
             <a className="nav-a" href="#"><li>Zain</li></a>
             <a className="nav-a" href="#"><li>Vaibhav</li></a>
             <a className="nav-a" href="#"><li>Hashem</li></a>
-            <a className="nav-a" href="#"><li>Lee</li></a>
           </ul>
         </div>
       </div>
