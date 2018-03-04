@@ -24,14 +24,16 @@ class LandingPage extends React.Component {
             </li>
           </ul>
         </div>
-        <div class="container">
-        <h1> Access the best notes available online. </h1>
-        <h1> By students, for students. </h1>
-        <hr/>
-        <h4> OpenNotes allows students to share notes conveniently and quickly with one another. </h4>
-        </div>
-
       </nav>
+      <div class="container">
+      <h1> Access the best notes available online. </h1>
+      <h1> By students, for students. </h1>
+      <hr/>
+      <h4> OpenNotes allows students to share notes conveniently and quickly with one another. </h4>
+      </div>
+      <div= "container">
+      <button type="button" class="btn btn-outline-primary">Browse</button>
+      </div>
 
 
     )
