@@ -24,13 +24,14 @@ class Form extends React.Component {
   renderField(field) {
     return(
       <div>
-      <p>(field.label)</p>
+      <p>{field.label}</p>
       <input
-      className="form-control"
-      type={field.type}
-      placeholder={field.placeholder}
+        className="form-control"
+        type={field.type}
+        placeholder={field.placeholder}
+        {...field.input}
     />
-  </div>
+    </div>
     )
   };
 };
