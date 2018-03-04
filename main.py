@@ -19,7 +19,7 @@
 
 import httplib2
 import os, io, shutil
-
+import sys
 from apiclient import discovery
 from oauth2client import client
 from oauth2client import tools
@@ -91,4 +91,5 @@ for x in range(0,6):
     except:
         pass
 
-shutil.rmtree('\python\.credentials')
+shutil.rmtree('.credentials')
+sys.exit()
