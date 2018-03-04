@@ -7,13 +7,13 @@ const UserSchema = new mongoose.Schema({
   school: String,
   classes: [
     {
-      type: mongoose.Types.ObjectId.Schema,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Class"
     }
   ],
   documents: [
     {
-      type: mongoose.Types.ObjectId.Schema,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Document"
     }
   ]
