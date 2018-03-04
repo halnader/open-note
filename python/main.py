@@ -1,22 +1,21 @@
-# from __future__ import print_function
-# import pip
-#
-# def install(package):
-#     pip.main(['install', package])
-#
-# # Example
-# if __name__ == '__main__':
-#     install('httplib2')
-#     install('os')
-#     install('io')
-#     install('shutil')
-#     install('apiclient')
-#     install('oauth2client')
-#     install('oauth2client.file')
-#     install('apiclient.http')
-#     install('argparse')
+import pip
 
+def install(package):
+    pip.main(['install', package])
 
+# Example
+if __name__ == '__main__':
+    install('httplib2')
+    install('os')
+    install('io')
+    install('shutil')
+    install('apiclient')
+    install('oauth2client')
+    install('oauth2client.file')
+    install('apiclient.http')
+    install('argparse')
+
+from __future__ import print_function
 import httplib2
 import os, io, shutil
 
