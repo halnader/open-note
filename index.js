@@ -1,6 +1,6 @@
 
 
-var myPythonScriptPath = 'D:\\hashem\\My_Projects\\StarterHacks\\python\\main.py';
+var myPythonScriptPath = 'main.py';
 
 // Use python shell
 var PythonShell = require('python-shell');
@@ -10,4 +10,3 @@ pyshell.end(function (err) {
         throw err;
     };
 });
-
