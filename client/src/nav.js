@@ -20,7 +20,7 @@ class Nav extends React.Component {
           </div>
         </div>
         <div className="upload-btn">
-          <a className="white-text" href="/upload">
+          <a className="white-text hover-white" href="/upload">
             Upload Notes <img src="/styles/plus.svg" style={{width: "25px", height: "25px", marginLeft: "1em"}}/>
           </a>
         </div>
