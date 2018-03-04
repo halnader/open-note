@@ -14,9 +14,17 @@ class Nav extends React.Component {
         <div className="nav-brand">
           <h3 className="nav-text">OpenNotes</h3>
           <div className="nav-user">
-            <h5 className="nav-brand-user">
-              Student
-            </h5>
+            {
+              user.displayName
+              ?
+              <h5 className="nav-brand-user">
+                user.displayName
+              </h5>
+              :
+              <h5 className="nav-brand-user">
+                Not signed in
+              </h5>
+            }
           </div>
         </div>
         <div className="upload-btn">

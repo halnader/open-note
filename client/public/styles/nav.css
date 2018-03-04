@@ -41,6 +41,10 @@
   color: #788296;
 }
 
+.nav-a:hover {
+  color: #788296;
+}
+
 ul li:hover {
   background-color: #1C1C1F;
   cursor: pointer;
