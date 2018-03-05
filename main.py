@@ -85,7 +85,7 @@ downloads = 'downloads'
 if not os.path.exists(downloads):
     os.makedirs(downloads)
 items = listFiles(10)
-for x in range(0,6):
+for x in range(0,6): #Max 6 files 
     try:
         downloadFile(items[x]['id'],downloads + '\\' + items[x]['name'], items[x]['name'])
     except:
